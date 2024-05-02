@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="/admin">ADMIN</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Pay For Parking</h1>
+        <p>All vehicles must pay for parking. Any vehicles parked illegaly will be ticketed and towed.</p>
+        <section>
+            <form action="/pay" method="POST">
+                <div>
+                    <label>Choose a Parking Lot</label>
+                    <select name="parkingLot">
+                        <option>Parking Lot A($2.50 per hr)</option>
+                        <option>Parking Lot B($1.00 per hr)</option>
+                        <option>Underground garage parking($5.00 per hr)</option>
+                    </select>
+                    <label>Hours:</label>
+                    <input type="text" placeholder="Enter number of Hours" name="hours" />
+                    <label>License Plate</label>
+                    <input type="text" placeholder="Enter License Plate" name="licPlate" />
+                </div>
+                <button type="submit">Pay</button>
+            </form>
+        </section>
+    </main>
+
+
+</body>
+
+</html>
